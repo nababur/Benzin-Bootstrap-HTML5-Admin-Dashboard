@@ -59,24 +59,9 @@ To get started with Benzin Bootstrap HTML5 Admin Dashboard, follow these steps:
  
 </ul>
 
-## Documentation
 
-For detailed usage instructions and customization options, please refer to our [Documentation](link-to-documentation).
+## Author
 
-## Support and Contribution
-
-We appreciate your interest in Benzin! If you encounter any issues, have questions, or want to contribute to the development of this project, please feel free to:
-
-- [Open an Issue](link-to-issues) to report bugs or request features.
-
-- Fork the repository and submit a Pull Request for improvements.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
-
-<h3>Author</h3>
 <span>Nababur Rahaman</span>
 <ul>
   <li><a href='https://github.com/nababur'>Author profile</a></li>
