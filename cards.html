@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!--====== Required meta tags ======-->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="description" content="">
+
+      <!--====== Title ======-->
+      <title>Admin Dashboard</title>
+
+      <!--====== Favicon Icon ======-->
+      <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/png">
+
+      <!--====== Google Fonts ======-->
+      <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+      <!--====== Material Icons ======-->
+      <link rel="stylesheet" href="assets/iconfont/material-icons.css">
+
+      <!-- dataTables.bootstrap4.min css-->
+      <link href="assets/css/dataTables.bootstrap4.min.css" rel="stylesheet" media="screen">
+
+      <!-- Chart.min css-->
+      <link href="assets/css/Chart.min.css" rel="stylesheet" media="screen">
+
+      <!-- animate css-->
+      <link href="assets/css/animate.css" rel="stylesheet" media="screen">
+      <!-- normalize css-->
+      <link href="assets/css/normalize.css" rel="stylesheet" media="screen">
+      <!--====== Bootstrap css ======-->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+      <!--====== Style css ======-->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/sidebar.css">
+      <!--====== Responsive css ======-->
+      <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+    </head>
+    <body>
+
+    <!-- Prealoder -->
+    <div class="spinner_body">
+       <div class="spinner"></div>  
+    </div>
+
+    <!-- Prealoder -->
+    <!--====== Start Header Section======-->
+    <header>
+        <div class="header">
+
+
+          <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-bg">
+              
+              <div class="brand-logo">
+                <a class="navbar-brand" href="index.html" id="menu-action">
+                  <div class="user-photo d-desktop"><img src="assets/images/icons/favicon.png" alt=""></div>
+                  <span>Benzi Admin Panel</span>
+                </a>    
+                <div id="nav-toggle">
+                    <div class="cta">
+                        <div class="toggle-btn type1"></div>
+                    </div>
+                </div>     
+              </div>
+            <!--   For Toggle Mobile Nav icon -->
+              <div class="for-mobile d-mobile">
+                  <div class= "toggle-button" id = "toggle-button">
+                    <span class="material-icons">
+                    menu
+                    </span>
+                  </div>
+
+              </div>
+                  <!--   For Toggle Mobile Nav Icon -->
+
+              <div class="collapse navbar-collapse pr-3" id="#">
+
+                <ul class="navbar-nav user-info ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown show">
+                    <a href="#" class="navbar-nav-link dropdown-toggle text-light" data-toggle="dropdown" aria-expanded="true">
+                      <div class="user-photo"><img src="https://dw3i9sxi97owk.cloudfront.net/uploads/thumbs/db9c4e1327eb8fe5e9395a4b04e1ea4a_70x70.jpg" alt=""></div>
+                      admin@admin.com
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="account.html" class="dropdown-item"> 
+                        <i class="material-icons">
+                        supervisor_account
+                        </i>
+                      Account Settings</a>
+                      <div class="menu-dropdown-divider"></div>
+                      <a class="dropdown-item" href="login.html"><i class="material-icons">exit_to_app</i>Logout</a>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+
+
+            </nav>
+            
+          </div>
+        <!--   For Toggle Mobile Nav -->
+         <div class="toggle-user-menu" id = "toggle-user-menu">
+            <ul>
+              <li><a href="#"><div class="user-photo"><img src="https://dw3i9sxi97owk.cloudfront.net/uploads/thumbs/db9c4e1327eb8fe5e9395a4b04e1ea4a_70x70.jpg" alt=""></div>admin@admin.com</a></li>
+              <li><a href="">
+                <i class="material-icons mr-2">
+                        supervisor_account
+                        </i>
+                      Account Settings
+                    </a></li>
+              <li><a href=""><i class="material-icons mr-2">exit_to_app</i>Logout</a></li>
+
+            </ul>
+          </div>
+        <!--   For Toggle Mobile Nav -->
+        </div>  
+    </header>
+    <!--====== End Header Section======-->
+
+<!--====== Start Left Sidebar Section======-->
+  <section id="left-sidebar-area">
+  <!--   Left Sidebar  -->
+        <div id="left-sidebar-section">
+
+          
+            <aside>
+              <div class="left-sidebar" id="wrapper-sidebar">
+                <ul>
+                  <li><a href="index.html"><i class="material-icons">home</i>Dashboard</a></li>
+                  <li><a href="users.html"><i class="material-icons">supervisor_account</i>Users</a></li>
+                  <li><a href="role.html"><i class="material-icons">perm_data_setting</i>Role</a></li>
+                  <li><a href="permissions.html"><i class="material-icons">lock_open</i>Permissions</a></li>
+                   <!-- Ui Elements -->
+                  <li><a  data-toggle="collapse" class="dropdown-item-list"  href="#dropdown-elements"><i class="material-icons">collections</i>Ui Elements<span class="collapsed float-right"><i class="material-icons">add</i> </span>
+              <span class="expanded float-right"><i class="material-icons">remove</i> </span></a>
+                    <!-- Dropdown Menu Start-->
+                    <div id="dropdown-elements" class="panel-collapse collapse">
+                      <div class="sub-dropdown">
+                        <ul class="sub-list">
+                          <li><a href="cards.html">Cards</a></li>
+                          <li><a href="accordion.html">Accordions</a></li>
+                          <li><a href="tabs.html">Tabs</a></li>
+                          <li><a href="buttons.html">Buttons</a></li>
+                          <li><a href="modals.html">Modals</a></li>
+                          <li><a href="alert.html">Notifications</a></li>
+                          <li><a href="badge.html">Badge & Tags</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                     <!-- Dropdown Menu End-->
+                  </li>
+                   <!-- Ui Charts -->
+                  <li><a  data-toggle="collapse" class="dropdown-item-list" href="#dropdown-charts"><i class="material-icons">pie_chart</i>Ui Charts<span class="collapsed float-right"><i class="material-icons">add</i> </span>
+              <span class="expanded float-right"><i class="material-icons">remove</i> </span></a>
+                    <!-- Dropdown Menu Start-->
+                    <div id="dropdown-charts" class="panel-collapse collapse">
+                      <div class="sub-dropdown">
+                        <ul class="sub-list">
+                          <li><a href="chart.html">Chart js</a></li>
+        
+                        </ul>
+                      </div>
+                    </div>
+                     <!-- Dropdown Menu End-->
+                  </li>
+                   <!--Forms -->
+                  <li><a  data-toggle="collapse"  class="dropdown-item-list" href="#dropdown-forms"><i class="material-icons">format_align_center</i>Forms<span class="collapsed float-right"><i class="material-icons">add</i> </span>
+              <span class="expanded float-right"><i class="material-icons">remove</i> </span></a>
+                    <!-- Dropdown Menu Start-->
+                    <div id="dropdown-forms" class="panel-collapse collapse">
+                      <div class="sub-dropdown">
+                        <ul class="sub-list">
+                          <li><a href="forms.html">Forms</a></li>
+        
+                        </ul>
+                      </div>
+                    </div>
+                     <!-- Dropdown Menu End-->
+                  </li>
+                   <!--Tables -->
+                  <li><a  data-toggle="collapse" class="dropdown-item-list"  href="#dropdown-tables"><i class="material-icons">equalizer</i>Tables<span class="collapsed float-right"><i class="material-icons">add</i> </span>
+              <span class="expanded float-right"><i class="material-icons">remove</i> </span></a>
+                    <!-- Dropdown Menu Start-->
+                    <div id="dropdown-tables" class="panel-collapse collapse">
+                      <div class="sub-dropdown">
+                        <ul class="sub-list">
+                          <li><a href="basictable.html">Basic</a></li>
+                          <li><a href="datatable.html">DataTable</a></li>
+                          <li><a href="responsivetable.html">Responsive</a></li>
+        
+                        </ul>
+                      </div>
+                    </div>
+                   <!--Widgets -->
+                  <li><a  data-toggle="collapse"  class="dropdown-item-list" href="#dropdown-widgets"><i class="material-icons">send</i>Widgets<span class="collapsed float-right"><i class="material-icons">add</i> </span>
+              <span class="expanded float-right"><i class="material-icons">remove</i> </span></a>
+                    <!-- Dropdown Menu Start-->
+                    <div id="dropdown-widgets" class="panel-collapse collapse">
+                      <div class="sub-dropdown">
+                        <ul class="sub-list">
+                          <li><a href="#">Boxes</a></li>
+                          <li><a href="#">Lists</a></li>
+                          <li><a href="#">Card</a></li>
+        
+                        </ul>
+                      </div>
+                    </div>
+                     <!-- Dropdown Menu End-->
+                  </li>
+                  <!-- Pages -->
+                  <li><a data-toggle="collapse"  class="dropdown-item-list" href="#dropdown-page"><i class="material-icons">description</i>Pages<span class="collapsed float-right"><i class="material-icons">add</i> </span>
+              <span class="expanded float-right"><i class="material-icons">remove</i> </span></a>
+
+                  <!-- Dropdown Menu Start-->
+                  <div id="dropdown-page" class="panel-collapse collapse">
+                    <div class="sub-dropdown">
+                      <ul class="sub-list">
+                        <li><a href="create.html">Create Page</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="reset-password.html">Forgot Password</a></li>
+                        <li><a href="404.html">404</a></li>
+       
+                      </ul>
+                    </div>
+                  </div>
+                   <!-- Dropdown Menu End-->
+
+                  </li>
+                  <li><a href="settings.html"><i class="material-icons">settings</i>General Settings</a></li>
+                  </ul>
+              </div>  
+            </aside>
+        </div>
+  <!--   Left Sidebar  -->
+  </section>
+<!--====== End Left Sidebar Section======-->
+
+
+
+    <!--====== Start Main Wrapper Section======-->
+    <section class="d-flex" id="wrapper">
+      
+
+
+        <div class="page-content-wrapper">
+           <!--  Header BreadCrumb -->
+            <div class="content-header">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                   
+                    <li class="breadcrumb-item active" aria-current="page">Card</li>
+                  </ol>
+                </nav>
+            </div>
+              <!--  Header BreadCrumb -->   
+              <!-- Card Page -->   
+            <div class="main-content">
+
+                <div class="card bg-white">
+                    <div class="card-body mt-5 mb-5">
+                      <div class="row animated fadeInUp">
+                       
+                          <div class="card-deck">
+                            <div class="card">
+                              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22362%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20362%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17112315a6e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17112315a6e%22%3E%3Crect%20width%3D%22362%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22134.953125%22%20y%3D%2298.1%22%3E362x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22362%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20362%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17112315a6e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17112315a6e%22%3E%3Crect%20width%3D%22362%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22134.953125%22%20y%3D%2298.1%22%3E362x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22362%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20362%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17112315a6e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17112315a6e%22%3E%3Crect%20width%3D%22362%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22134.953125%22%20y%3D%2298.1%22%3E362x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card Page-->   
+
+
+
+            </div>  
+            <!--  main-content -->   
+        </div> 
+
+    </section>
+
+    <!--====== End Main Wrapper Section======-->
+
+
+
+
+    <!--====== JQuery from CDN ======-->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== dataTables js ======-->
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+
+    <!--====== CkEditors js ======-->
+    <script src="assets/js/ckeditor.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/script.js"></script>
+
+
+
+</body>
+</html>
